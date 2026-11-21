@@ -459,7 +459,8 @@
       $('ph').style.left = '0%';
       void $('ph').offsetWidth;
       $('ph').style.transition = '';
-      setTimeout(function () { select(start, { openTrack: false, force: true }); }, 450);
+      var startSlug = start.slug;
+      setTimeout(function () { if (!state.home) select(state.bySlug[startSlug], { openTrack: false, force: true }); }, 450);
       state.sel = start; renderMonitor(); state.sel = null;
     } else {
       select(start, { openTrack: false, force: true });

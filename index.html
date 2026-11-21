@@ -21,10 +21,10 @@
 <div class="dark">
   <div class="wrap">
     <header class="top">
-      <a class="brand" href="https://www.dekino.org" aria-label="de/kino ana səhifə">
-        <img src="assets/wordmark.png" alt="de/kino" width="140" height="31">
-        <span class="mono muted">/ LÜĞƏT</span>
-      </a>
+      <div class="brand">
+        <a href="https://www.dekino.org" aria-label="de/kino ana səhifə"><img src="assets/wordmark.png" alt="de/kino" width="140" height="31"></a>
+        <a href="./" class="mono muted home-link" data-home>/ LÜĞƏT</a>
+      </div>
       <nav class="mono nav">
         <a href="#kanallar">Kanallar</a>
         <a href="https://www.dekino.org/p/start">Buradan başla</a>
@@ -84,12 +84,36 @@
       </span>
     </div>
     <section class="mon" id="mon" aria-live="polite"></section>
-    <footer class="foot mono">
-      <span>Lüğət "… nədir?" seriyası ilə böyüyür.</span>
-      <a href="https://www.dekino.org/p/start">Termin təklif et →</a>
-    </footer>
   </div>
 </main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="sf-grid">
+      <div class="sf-about">
+        <img src="assets/wordmark.png" alt="de/kino" width="140" height="31">
+        <p>de/kino, yə'ni dekonstruksiya olunmuş kino. Kinonu kəsib-doğrayırıq: filmləri, onların dilini və siyasətini. Akademiya ilə jurnalistikanın arasında, gənc oxucu üçün yazırıq: analizlər, tərcümələr, kino dərsləri və de/seans müzakirələri.</p>
+        <p class="muted">Lüğət bu işin sözlüyüdür: yazılarda keçən hər anlayışın izahı burada toplanır və "… nədir?" seriyası ilə böyüyür.</p>
+      </div>
+      <nav class="sf-col" aria-label="Lüğət">
+        <h4 class="mono">LÜĞƏT</h4>
+        <a href="./" data-home>Başlanğıc</a>
+        <a href="#kanallar">Kanallar</a>
+        <a href="https://www.dekino.org/p/start">Termin təklif et</a>
+      </nav>
+      <nav class="sf-col" aria-label="de/kino">
+        <h4 class="mono">DE/KİNO</h4>
+        <a href="https://www.dekino.org">dekino.org ↗</a>
+        <a href="https://www.dekino.org/p/start">Buradan başla ↗</a>
+        <a href="https://buymeacoffee.com/jabizadeh">Dəstək ol ↗</a>
+      </nav>
+    </div>
+    <div class="sf-bottom mono">
+      <span>© 2026 de/kino · Elvin Cəbizadə</span>
+      <span>Terminlər hər açılışda cədvəldən yenilənir</span>
+    </div>
+  </div>
+</footer>
 
 <script src="app.js"></script>
 </body>

@@ -4,8 +4,7 @@
 
   // Google Sheets: cədvəl "linki olan hər kəs baxa bilər" olanda sayt məlumatı birbaşa oradan oxuyur.
   var SHEET_ID = '1Gl9ctU4BHU2B7Kb4RzGeK1VIqRLqLDvMswpC0NDrl5U';
-  var DEFAULT_TERM = 'kadrxarici-mekan';
-  var AZ = 'A B C Ç D E Ə F G Ğ H X I İ J K Q L M N O Ö P R S Ş T U Ü V Y Z'.split(' ');
+    var AZ = 'A B C Ç D E Ə F G Ğ H X I İ J K Q L M N O Ö P R S Ş T U Ü V Y Z'.split(' ');
   var N = AZ.length;
 
   var state = { kanallar: [], terms: [], bySlug: {}, byName: {}, order: [], open: {}, sel: null, zoom: 1, booted: false };
@@ -262,12 +261,64 @@
   };
   function postTitle(url) { var m = url.match(/\/p\/([^/?#]+)/); return (m && POSTS[m[1]]) || 'Yazını oxu'; }
 
+  // ---------- başlanğıc ekranı ----------
+  function renderHome() {
+    state.home = true;
+    var ph = $('ph');
+    ph.style.left = '0%';
+    if (!reduced) ph.classList.add('idle');
+    $('phTag').textContent = '▶';
+    document.querySelectorAll('#ruler button.on,.clip.on,.tick.on').forEach(function (e) { e.classList.remove('on'); });
+    $('monLabel').innerHTML = '<span class="red2">▶</span> PROGRAM · BAŞLANĞIC';
+    $('prev').style.visibility = 'hidden';
+    var first = state.order[0];
+    $('nextName').textContent = 'İlk termin';
+    $('next').setAttribute('data-s', first.slug);
+    var withFig = state.order.filter(function (t) { return DIAGRAMS[t.sxem]; });
+    var chans = state.kanallar.map(function (k) {
+      var n = state.terms.filter(function (t) { return t.kanal === k.kod; }).length;
+      return '<button type="button" data-open="' + esc(k.kod) + '"><span>' + esc(k.ch) + ' · ' + esc(k.ad) + '</span><small>' + n + ' termin</small></button>';
+    }).join('');
+    $('mon').innerHTML =
+      '<div class="home-art swap">' +
+        '<h2>Haradan başlamalı?</h2>' +
+        '<p class="lead">Bu lüğət kino haqqında oxuyanda və yazanda rastlaşdığın anlayışları bir yerə yığır. Terminlər montaj masasındakı kimi kanallara bölünüb: forma (kinonun dili) və kontekst (kinonun dünyası).</p>' +
+        '<ol class="steps3">' +
+          '<li><span class="tc">00:00:01</span><div><b>Kanalı aç</b><span>Yuxarıdakı timeline-da kanalın adına bas: alt kanallar və terminlər açılacaq.</span></div></li>' +
+          '<li><span class="tc">00:00:02</span><div><b>Termini seç</b><span>Klipə bas, ya da <kbd class="mono" style="color:#4A4A4A;border-color:#CFC7B8">/</kbd> düyməsi ilə axtar. Pleyhed terminin hərfinə gedəcək.</span></div></li>' +
+          '<li><span class="tc">00:00:03</span><div><b>Oxu və paylaş</b><span>Tə\'rif, tanıma yolları və sxem burada, monitorda açılır. Hər terminin öz linki var.</span></div></li>' +
+        '</ol>' +
+        '<button type="button" class="cta" data-random>Təsadüfi termin <span class="mono">▶</span></button>' +
+      '</div>' +
+      '<aside class="side swap" style="animation-delay:.12s">' +
+        '<div><h3>KANALLAR</h3><div class="chan" style="margin-top:8px">' + chans + '</div></div>' +
+        (withFig.length ? '<div><h3>SXEMLİ TERMİNLƏR</h3><div class="rel" style="margin-top:12px">' + withFig.map(function (r) {
+          return '<button type="button" data-s="' + r.slug + '">' + esc(r.name) + '<small>' + esc(r.kanal) + '</small></button>';
+        }).join('') + '</div></div>' : '') +
+      '</aside>';
+    document.title = 'de/kino lüğət: kino dilinin lüğəti';
+  }
+  function goHome() {
+    state.sel = null;
+    renderHome();
+    try { history.replaceState(null, '', location.pathname); } catch (e) { /* */ }
+  }
+  function openChannel(kod) {
+    state.open[kod] = true;
+    renderTracks();
+    var el = document.querySelector('.track[data-k="' + kod + '"]');
+    if (el) el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+  }
+
   // ---------- seçim ----------
   function select(t, opts) {
     opts = opts || {};
     if (!t) return;
-    var changed = state.sel !== t;
+    var changed = state.sel !== t || state.home;
     state.sel = t;
+    state.home = false;
+    $('ph').classList.remove('idle');
+    $('prev').style.visibility = '';
     if (!state.open[t.kanal] && opts.openTrack !== false) { state.open[t.kanal] = true; renderTracks(); }
     else {
       document.querySelectorAll('.clip.on,.tick.on').forEach(function (e) { e.classList.remove('on'); });
@@ -328,8 +379,21 @@
       if (t) select(t, { scroll: false });
     });
     $('mon').addEventListener('click', function (e) {
+      if (e.target.closest('[data-random]')) { select(state.order[Math.floor(Math.random() * state.order.length)], { scroll: true }); return; }
+      var o = e.target.closest('button[data-open]');
+      if (o) { openChannel(o.getAttribute('data-open')); return; }
       var s = e.target.closest('button[data-s]');
       if (s) select(state.bySlug[s.getAttribute('data-s')], { scroll: true });
+    });
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a');
+      if (!a) return;
+      if (a.hasAttribute('data-home')) { e.preventDefault(); goHome(); window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }); return; }
+      var href = a.getAttribute('href') || '';
+      if (href.charAt(0) === '#' && document.getElementById(href.slice(1))) {
+        e.preventDefault();
+        document.getElementById(href.slice(1)).scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+      }
     });
     ['prev', 'next'].forEach(function (id) {
       $(id).addEventListener('click', function () { select(state.bySlug[$(id).getAttribute('data-s')]); });
@@ -362,7 +426,12 @@
         select(state.bySlug[$(e.key === 'ArrowRight' ? 'next' : 'prev').getAttribute('data-s')]);
       }
     });
-    window.addEventListener('hashchange', function () { var t = state.bySlug[location.hash.slice(1)]; if (t && t !== state.sel) select(t, { scroll: true }); });
+    window.addEventListener('hashchange', function () {
+      var h = location.hash.slice(1);
+      if (!h) { if (!state.home) goHome(); return; }
+      var t = state.bySlug[h];
+      if (t && t !== state.sel) select(t, { scroll: true });
+    });
     var rt;
     window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(layoutClips, 120); });
   }
@@ -376,12 +445,15 @@
     ingest(d);
     stat();
     renderRuler();
-    var start = state.bySlug[prevSlug] || state.bySlug[location.hash.slice(1)] || state.bySlug[DEFAULT_TERM] || state.order[0];
+    var wasHome = state.booted && state.home;
+    var start = wasHome ? null : (state.bySlug[prevSlug] || state.bySlug[location.hash.slice(1)] || null);
     state.open = state.open || {};
-    if (!state.booted) state.open[start.kanal] = true;
+    if (!state.booted && start) state.open[start.kanal] = true;
     state.sel = null;
     renderTracks();
-    if (!state.booted && !reduced) {
+    if (!start) {
+      renderHome();
+    } else if (!state.booted && !reduced) {
       // ilk açılışda pleyhed A-dan seçilmiş hərfə "scrub" edir
       $('ph').style.transition = 'none';
       $('ph').style.left = '0%';

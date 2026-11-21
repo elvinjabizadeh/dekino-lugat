@@ -21,6 +21,7 @@ button{font:inherit;cursor:pointer}
 .dark a:hover{color:var(--red)}
 .top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 0;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:16px}
+.brand a{display:block}
 .brand img{height:30px;width:auto;display:block}
 .brand span{font-size:14px;letter-spacing:.08em}
 .nav{display:flex;gap:28px;font-size:14px;flex-wrap:wrap}
@@ -124,9 +125,42 @@ kbd{font-size:12px;color:var(--muted);border:1px solid #333;border-radius:6px;pa
 .post{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid #E2DBCF;border-radius:12px;padding:18px 20px;text-decoration:none}
 .post .mono{font-size:12px;color:var(--red2)}
 .post b{font-size:16px;font-weight:500;line-height:1.4}
-.foot{margin-top:72px;padding:24px 0 72px;border-top:1px solid #D8D1C4;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#4A4A4A}
+.mon{padding-bottom:72px}
 .swap{animation:rise .5s cubic-bezier(.2,.8,.2,1) backwards}
 .rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) backwards}
+
+/* home view */
+.ph.idle{animation:sweep 28s linear infinite;transition:none}
+@keyframes sweep{from{left:0}to{left:100%}}
+.home-art{flex:999 1 560px;min-width:0;max-width:720px;display:flex;flex-direction:column;gap:28px}
+.home-art h2{margin:0;font-size:48px;font-weight:500;line-height:1.08;letter-spacing:-.02em}
+.home-art .lead{margin:0;font-size:19px;line-height:1.7;color:#1A1A1A}
+.steps3{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.steps3 li{display:grid;grid-template-columns:92px 1fr;gap:16px;align-items:baseline;border-top:1px solid #D8D1C4;padding-top:16px}
+.steps3 .tc{font-family:'DM Mono',monospace;font-size:13px;color:var(--red2)}
+.steps3 b{display:block;font-size:18px;font-weight:500;margin-bottom:4px}
+.steps3 span{font-size:16px;line-height:1.6;color:#2A2A2A}
+.cta{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--cream);border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:500;transition:background .15s}
+.cta:hover{background:var(--red2)}
+.cta .mono{font-size:12px;color:var(--red)}
+.cta:hover .mono{color:var(--cream)}
+.chan{display:flex;flex-direction:column;gap:2px}
+.chan button{display:flex;justify-content:space-between;gap:12px;background:none;border:0;border-bottom:1px solid #E2DBCF;padding:12px 2px;text-align:left;color:var(--ink);font-size:15px}
+.chan button:hover{color:var(--red2)}
+.chan small{font-family:'DM Mono',monospace;font-size:12px;color:#6B6B6B}
+
+/* site footer */
+.site-foot{background:var(--ink);color:var(--cream);margin-top:24px}
+.site-foot a{color:var(--cream);text-decoration:none}
+.site-foot a:hover{color:var(--red)}
+.sf-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding:64px 0 48px}
+.sf-about{display:flex;flex-direction:column;gap:16px;max-width:520px}
+.sf-about img{height:28px;width:auto;align-self:flex-start}
+.sf-about p{margin:0;font-size:16px;line-height:1.7;color:#D4D0C8}
+.sf-about p.muted{font-size:14px;color:var(--muted)}
+.sf-col{display:flex;flex-direction:column;gap:12px;font-size:15px}
+.sf-col h4{margin:0 0 4px;font-size:12px;font-weight:500;letter-spacing:.08em;color:var(--muted)}
+.sf-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding:20px 0 32px;font-size:12px;color:#7A7A7A}
 
 /* svg diagram motion */
 .ring{transform-box:fill-box;transform-origin:center;animation:ring 2.6s ease-out infinite}
@@ -162,6 +196,10 @@ kbd{font-size:12px;color:var(--muted);border:1px solid #333;border-radius:6px;pa
   .clip{position:static;height:34px}
   .grp{position:static}
   .meta{grid-template-columns:90px 1fr}
+  .sf-grid{grid-template-columns:1fr 1fr;gap:32px;padding:48px 0 32px}
+  .sf-about{grid-column:1 / -1}
+  .home-art h2{font-size:36px}
+  .steps3 li{grid-template-columns:64px 1fr}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none !important;transition:none !important}

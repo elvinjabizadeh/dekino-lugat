@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>de/kino lüğət: kino dilinin lüğəti</title>
+<meta name="description" content="Kino dilinin azərbaycanca lüğəti: mizanssen, kinematoqrafiya, montaj, səs, janrlar və nəzəriyyə. Hər termin tə'rif, orijinal adı və de/kino yazılarındakı nümunəsi ilə.">
+<meta property="og:title" content="de/kino lüğət: kino dilinin lüğəti">
+<meta property="og:description" content="Kadrı sökmək üçün lazım olan sözlər, montaj masasında.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#monitor">Termin mətninə keç</a>
+
+<div class="dark">
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="https://www.dekino.org" aria-label="de/kino ana səhifə">
+        <img src="assets/wordmark.png" alt="de/kino" width="140" height="31">
+        <span class="mono muted">/ LÜĞƏT</span>
+      </a>
+      <nav class="mono nav">
+        <a href="#kanallar">Kanallar</a>
+        <a href="https://www.dekino.org/p/start">Buradan başla</a>
+        <a href="https://www.dekino.org">dekino.org ↗</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text rise">
+        <div class="mono muted rec-line"><span class="rec" aria-hidden="true"></span><span id="stat">REC · LÜĞƏT</span></div>
+        <h1>Kino dilinin lüğəti</h1>
+        <p>Kadrı sökmək üçün lazım olan sözlər, montaj masasında. Kanalı aç, termini seç, aşağıdakı monitorda oxu.</p>
+      </div>
+      <div class="search rise" style="animation-delay:.15s">
+        <label class="search-box" for="q">
+          <span class="mono red">TC</span>
+          <input id="q" type="search" autocomplete="off" placeholder="Termin axtar…" aria-label="Termin axtar" aria-controls="results" aria-expanded="false" role="combobox">
+          <kbd class="mono">/</kbd>
+        </label>
+        <ul id="results" class="results" role="listbox" hidden></ul>
+      </div>
+    </section>
+
+    <section id="kanallar" class="panel" aria-label="Kanallar">
+      <div class="toolbar mono">
+        <span><span class="cream">SEQ</span> · LÜĞƏT_v1 · A–Z</span>
+        <div class="tools">
+          <button type="button" id="toggleAll" class="tbtn">Hamısını aç</button>
+          <label class="zoom" title="Zoom">
+            <span aria-hidden="true">−</span>
+            <input id="zoom" type="range" min="1" max="3" step="0.25" value="1" aria-label="Zoom">
+            <span aria-hidden="true">+</span>
+          </label>
+        </div>
+      </div>
+      <div class="tl-scroll" id="tlScroll">
+        <div class="tl-inner" id="tlInner">
+          <div class="tl-overlay" aria-hidden="true"><div class="ph" id="ph"><span class="ph-tag mono" id="phTag">A</span></div></div>
+          <div class="row ruler-row">
+            <div class="head-spacer"></div>
+            <div class="ruler" id="ruler"></div>
+          </div>
+          <div id="tracks"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<main id="monitor" class="light" tabindex="-1">
+  <div class="wrap">
+    <div class="mon-bar mono">
+      <span id="monLabel"><span class="red2">▶</span> PROGRAM</span>
+      <span class="steps">
+        <button type="button" id="prev" class="step">◀ <span id="prevName"></span></button>
+        <button type="button" id="next" class="step"><span id="nextName"></span> ▶</button>
+      </span>
+    </div>
+    <section class="mon" id="mon" aria-live="polite"></section>
+    <footer class="foot mono">
+      <span>Lüğət "… nədir?" seriyası ilə böyüyür.</span>
+      <a href="https://www.dekino.org/p/start">Termin təklif et →</a>
+    </footer>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

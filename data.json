@@ -1,0 +1,557 @@
+{
+"kanallar": [
+{
+"kod": "NAR",
+"ad": "Narrativ",
+"kanal": "V1",
+"alt": "Struktur, Personaj, Süjet vasitələri",
+"tesvir": "Hekayənin necə qurulduğu: süjet, zaman, personaj."
+},
+{
+"kod": "MİZ",
+"ad": "Mizanssen",
+"kanal": "V2",
+"alt": "Anlayış, Məkan, Aktyor, İşıq",
+"tesvir": "Kadrın içinə qoyulan hər şey."
+},
+{
+"kod": "KİN",
+"ad": "Kinematoqrafiya",
+"kanal": "V3",
+"alt": "Plan ölçüləri, Kamera hərəkəti, Kompozisiya, Optika və rəng",
+"tesvir": "Kameranın baxışı: plan, hərəkət, kompozisiya, optika."
+},
+{
+"kod": "MON",
+"ad": "Montaj",
+"kanal": "V4",
+"alt": "Davamlılıq, Kəsik növləri, Mə'na və ritm",
+"tesvir": "Planların bir-birinə necə bağlandığı."
+},
+{
+"kod": "SƏS",
+"ad": "Səs",
+"kanal": "V5",
+"alt": "Səsin mənbəyi, Səs montajı",
+"tesvir": "Danışıq, səs effektləri və musiqi."
+},
+{
+"kod": "JAN",
+"ad": "Janr və cərəyan",
+"kanal": "A1",
+"alt": "Janrlar, Cərəyanlar",
+"tesvir": "Filmləri birləşdirən forma, dövr və məktəblər."
+},
+{
+"kod": "NƏZ",
+"ad": "Nəzəriyyə",
+"kanal": "A2",
+"alt": "Müəllif və üslub, Tamaşaçı və baxış, Siyasi nəzəriyyə",
+"tesvir": "Kinonu düşünmək üçün nəzəri anlayışlar."
+},
+{
+"kod": "İST",
+"ad": "İstehsal",
+"kanal": "A3",
+"alt": "Format",
+"tesvir": "Kinonun texnikası, sənayesi və formatları."
+}
+],
+"terminler": [
+{
+"termin": "Flashback",
+"kanal": "NAR",
+"alt": "Struktur",
+"orijinal": "ing. flashback · fr. retour en arrière · tr. geriye dönüş",
+"tarif": "Hekayənin indiki zamanını kəsib keçmişdə baş vermiş hadisəni göstərən epizod. Personajın xatirəsini açmaq, sirri üzə çıxarmaq və ya bir hadisənin səbəbini izah etmək üçün işlənir.",
+"tanimaq": "Rəng, işıq və ya kadr formatı birdən dəyişir | Personaj düşüncəyə dalır, ardınca keçmiş göstərilir | Geyim, saç, dekor başqa dövrü göstərir",
+"elaqeli": "Süjet və fabula, Paralel montaj",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "MacGuffin",
+"kanal": "NAR",
+"alt": "Süjet vasitələri",
+"orijinal": "ing. MacGuffin · Alfred Hitchcock-un işlətdiyi termin",
+"tarif": "Personajların uğrunda mübarizə apardığı, süjeti hərəkətə gətirən, amma özü əhəmiyyət daşımayan əşya və ya məqsəd: sənəd, pul, çamadan. Vacib olan onun nə olduğu deyil, personajları nəyə məcbur etdiyidir.",
+"tanimaq": "Hamı nəyisə axtarır, amma onun nə olduğu sona qədər bəlli olmur | Film bitəndə əşya unudulur | Onu başqa bir şeylə əvəz etsən, hekayə dəyişmir",
+"elaqeli": "Süjet və fabula, Rekvizit",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Süjet və fabula",
+"kanal": "NAR",
+"alt": "Struktur",
+"orijinal": "rus. сюжет, фабула · ing. plot, story · rus formalistlərinin termini",
+"tarif": "Fabula hadisələrin xronoloji ardıcıllığıdır, süjet isə filmin bu hadisələri bizə hansı sıra ilə və necə göstərməsi. Eyni fabuladan tamam fərqli süjetlər qurmaq olar.",
+"tanimaq": "Film sondan başlayır və ya zamanda sıçrayır | Bə'zi hadisələri görmürük, yalnız nəticəsini öyrənirik | Hadisələrin əsl sırasını tamaşaçı özü yığır",
+"elaqeli": "Flashback, Paralel montaj",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Xarakter",
+"kanal": "NAR",
+"alt": "Personaj",
+"orijinal": "ing. character · tr. karakter",
+"tarif": "Hekayədə hərəkət edən, istəyi və qarşısında maneələri olan fiqur. Kinoda xarakter danışdığı sözlərlə yox, seçimləri, hərəkəti və kadrdakı yeri ilə qurulur.",
+"tanimaq": "Personaj çətin seçim qarşısında qalır | Kadrdakı yeri onun vəziyyətini göstərir: təklik, güc, sıxışma | Sonda dəyişir, ya da dəyişməməsi özü mə'na daşıyır",
+"elaqeli": "Blokinq, Kostyum",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Mizanssen",
+"kanal": "MİZ",
+"alt": "Anlayış",
+"orijinal": "fr. mise-en-scène · tr. mizansen",
+"tarif": "Kadrın içinə qoyulan hər şey: dekor, işıq, kostyum, aktyorların yeri və hərəkəti. Hərfən \"səhnəyə qoyma\" deməkdir, teatrdan kinoya keçib.",
+"tanimaq": "Kadrda heç nə təsadüfi görünmür | Rəng, işıq və əşyalar personaj haqda nəsə deyir | Aktyorların bir-birinə nisbətən yeri münasibətlərini göstərir",
+"elaqeli": "Dekor, İşıqlandırma, Blokinq",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Blokinq",
+"kanal": "MİZ",
+"alt": "Aktyor",
+"orijinal": "ing. blocking",
+"tarif": "Aktyorların kadrda harada duracağının, necə hərəkət edəcəyinin və kameraya nisbətən yerinin planlanması. Kim mərkəzdə, kim kənarda, kim yaxınlaşır, kim uzaqlaşır, hamısı münasibəti göstərir.",
+"tanimaq": "Personajlar arasındakı məsafə səhnə boyu dəyişir | Güclü personaj kadrda daha yüksəkdə və ya mərkəzdə durur | Aktyorun hərəkəti kameranın hərəkəti ilə birlikdə xoreoqrafiya kimi qurulub",
+"elaqeli": "Mizanssen, Xarakter",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Dekor",
+"kanal": "MİZ",
+"alt": "Məkan",
+"orijinal": "fr. décor · ing. set, production design",
+"tarif": "Hadisənin keçdiyi məkanın qurulması və ya seçilməsi: otaq, küçə, peyzaj. Dekor sadəcə fon deyil, personajın vəziyyətini və filmin dünyasını danışan elementdir.",
+"tanimaq": "Otaq personajın xasiyyətini əks etdirir | Məkan hekayə boyu dəyişir: dağılır, boşalır | Dövr və sosial təbəqə əşyalardan oxunur",
+"elaqeli": "Rekvizit, Mizanssen",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "İşıqlandırma",
+"kanal": "MİZ",
+"alt": "İşıq",
+"orijinal": "ing. lighting · tr. ışıklandırma",
+"tarif": "Kadrda işığın mənbəyi, istiqaməti, sərtliyi və rəngi. Eyni sifət yuxarıdan, aşağıdan və ya yandan işıqlananda tamam fərqli tə'sir bağışlayır.",
+"tanimaq": "Sifətin yarısı kölgədə qalır | İşıq personajın üzərində toplanır, ətraf qaranlıqdır | Səhnənin əhvalı işığın rəngi ilə dəyişir: soyuq, isti",
+"elaqeli": "Film noir, Mizanssen",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Kostyum",
+"kanal": "MİZ",
+"alt": "Aktyor",
+"orijinal": "ing. costume",
+"tarif": "Personajın geyimi, makiyajı və saç düzümü. Kostyum dövrü, sosial vəziyyəti və personajın daxili dəyişməsini göstərir.",
+"tanimaq": "Personaj dəyişəndə geyimi də dəyişir | Rəng personajı digərlərindən ayırır | Geyim ilə məkan arasında ziddiyyət var",
+"elaqeli": "Xarakter, Mizanssen",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Rekvizit",
+"kanal": "MİZ",
+"alt": "Məkan",
+"orijinal": "rus. реквизит · ing. props",
+"tarif": "Aktyorun istifadə etdiyi və ya kadrda duran əşyalar: məktub, silah, fincan. Bə'zən adi bir əşya filmin əsas simvoluna çevrilir.",
+"tanimaq": "Kamera bir əşyanı xüsusi göstərir | Əşya film boyu təkrar görünür və mə'nası dəyişir | Personaj əşyaya münasibəti ilə tanınır",
+"elaqeli": "Dekor, MacGuffin, Detal",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Detal",
+"kanal": "KİN",
+"alt": "Plan ölçüləri",
+"orijinal": "ing. extreme close-up, insert · tr. detay çekim",
+"tarif": "Bir əşyanı və ya bədənin kiçik hissəsini (göz, əl, açar) ekranı dolduracaq qədər yaxından göstərən plan. Tamaşaçının diqqətini vacib bir şeyə məcburən yönəldir.",
+"tanimaq": "Ekranı tək bir əşya və ya göz doldurur | Plan qısadır və hekayəyə ipucu verir | Əvvəlki və sonrakı planlar daha genişdir",
+"elaqeli": "İri plan, Rekvizit",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "İri plan",
+"kanal": "KİN",
+"alt": "Plan ölçüləri",
+"orijinal": "ing. close-up · tr. yakın plan",
+"tarif": "Personajın sifətini ekranı dolduracaq qədər yaxından göstərən plan. Duyğunu və daxili vəziyyəti ön plana çıxarır, tamaşaçını personaja yaxınlaşdırır.",
+"tanimaq": "Kadrda yalnız sifət, bə'zən də çiyinlər var | Fon bulanıqdır və ya görünmür | Ən kiçik mimika belə hadisəyə çevrilir",
+"elaqeli": "Detal, Orta plan, Kuleşov effekti",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Orta plan",
+"kanal": "KİN",
+"alt": "Plan ölçüləri",
+"orijinal": "ing. medium shot · tr. orta plan",
+"tarif": "Personajı təxminən beldən yuxarı göstərən plan. Həm jestləri, həm sifəti görməyə imkan verir; dialoq səhnələrində ən çox işlənən ölçüdür.",
+"tanimaq": "Personaj beldən yuxarı görünür | Əl hərəkətləri və sifət eyni anda oxunur | İki nəfər bir kadrda danışır",
+"elaqeli": "İri plan, Detal",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Dolly zoom",
+"kanal": "KİN",
+"alt": "Kamera hərəkəti",
+"orijinal": "ing. dolly zoom · \"Vertigo effekti\"",
+"tarif": "Kamera relslər üzərində obyektə yaxınlaşır, obyektiv isə eyni anda əks istiqamətdə zum edir (və ya əksinə). Personaj yerində qalır, arxa fon isə uzanır və ya sıxılır. Hitchcock-un \"Vertigo\" (1958) filmi ilə məşhurlaşıb.",
+"tanimaq": "Personajın ölçüsü dəyişmir, amma arxa plan \"nəfəs alır\" | Bu, adətən şok, qorxu və ya birdən dərk etmə anıdır | Tamaşaçıda başgicəllənmə hissi yaranır",
+"elaqeli": "Panorama, Sahə dərinliyi",
+"dekino": "",
+"sxem": "dolly-zoom"
+},
+{
+"termin": "Kran",
+"kanal": "KİN",
+"alt": "Kamera hərəkəti",
+"orijinal": "ing. crane shot · tr. vinç çekimi",
+"tarif": "Kameranın kran üzərində yuxarı-aşağı və ya geniş məsafədə hərəkət etdiyi çəkiliş. Səhnəni açmaq və ya bağlamaq, personajı mühitin içində kiçiltmək üçün işlənir.",
+"tanimaq": "Kamera yerdən qalxır və səhnəni yuxarıdan göstərir | Hərəkət yavaş və axıcıdır | Film tez-tez belə planla başlayır və ya bitir",
+"elaqeli": "Panorama",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Panorama",
+"kanal": "KİN",
+"alt": "Kamera hərəkəti",
+"orijinal": "ing. pan · rus. панорама",
+"tarif": "Kamera yerində qalaraq üfüqi istiqamətdə fırlanır. Məkanı açmaq, hərəkət edən personajı izləmək və ya iki nöqtəni kəsiksiz bağlamaq üçün işlənir.",
+"tanimaq": "Kamera sağa-sola dönür, amma yerini dəyişmir | Kadr məkanı tədricən açır | Kəsik olmadan bir personajdan digərinə keçilir",
+"elaqeli": "Kran, Kəsik",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Baxış xətti",
+"kanal": "KİN",
+"alt": "Kompozisiya",
+"orijinal": "ing. eyeline, eyeline match",
+"tarif": "Personajın baxdığı istiqamət. Montajda növbəti planda onun nəyə baxdığını göstərmək tamaşaçının gözündə iki kadrı bir məkan kimi birləşdirir.",
+"tanimaq": "Personaj kadrdan kənara baxır, növbəti plan baxdığı şeydir | Dialoqda baxışlar bir-birinə uyğun gəlir | Baxış istiqaməti kadrın bir tərəfini \"ağırlaşdırır\"",
+"elaqeli": "Kadrxarici məkan, 180 dərəcə qaydası, Kuleşov effekti",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Kadrxarici məkan",
+"kanal": "KİN",
+"alt": "Kompozisiya",
+"orijinal": "fr. hors-champ · ing. off-screen space · tr. alan dışı",
+"tarif": "Kadrın sərhədlərindən kənarda qalan, amma tamaşaçının varlığını hiss etdiyi məkan. Rejissor onu göstərmir; səslə, baxışın istiqaməti ilə, kadra girib-çıxan hərəkətlə, düşən kölgə ilə xatırladır. Görünməyən çox vaxt görünəndən güclü tə'sir edir, çünki boşluğu tamaşaçının təxəyyülü doldurur.",
+"tanimaq": "Personaj kadrdan kənara baxır, amma nəyə baxdığını görmürük | Səsin mənbəyi kadrda yoxdur: addım, qapı, nəfəs | Kadr boş qalır, kimsə indicə çıxıb və ya girmək üzrədir",
+"elaqeli": "Baxış xətti, Diegetik səs",
+"dekino": "https://www.dekino.org/p/the-hand-of-god-filmindn-oyrncyimiz",
+"sxem": "kadrxarici"
+},
+{
+"termin": "Simmetriya",
+"kanal": "KİN",
+"alt": "Kompozisiya",
+"orijinal": "ing. symmetrical composition",
+"tarif": "Kadrın iki yarısının bir-birini təkrarladığı kompozisiya. Nizam və sabitlik, bə'zən də süni, narahat edici mükəmməllik hissi yaradır. Stanley Kubrick və Wes Anderson filmlərində tez-tez rast gəlinir.",
+"tanimaq": "Kadrı ortadan bölən xəyali xətt var | Personaj tam mərkəzdə durur | Dekor və əşyalar hər iki tərəfdə eynidir",
+"elaqeli": "Üçdə bir qaydası, Blokinq",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Üçdə bir qaydası",
+"kanal": "KİN",
+"alt": "Kompozisiya",
+"orijinal": "ing. rule of thirds",
+"tarif": "Kadrı iki üfüqi və iki şaquli xətlə doqquz bərabər hissəyə bölüb əsas obyekti xətlərin üzərinə və ya kəsişmələrinə yerləşdirmək. Kompozisiyanı daha dinamik və təbii göstərir.",
+"tanimaq": "Personajın gözləri yuxarı üçdə bir xəttindədir | Üfüq kadrın ortasında yox, aşağı və ya yuxarı xəttdədir | Personaj mərkəzdə deyil, baxdığı tərəfdə boşluq var",
+"elaqeli": "Simmetriya",
+"dekino": "",
+"sxem": "ucde-bir"
+},
+{
+"termin": "Anamorfik linza",
+"kanal": "KİN",
+"alt": "Optika və rəng",
+"orijinal": "ing. anamorphic lens",
+"tarif": "Təsviri üfüqi istiqamətdə sıxaraq çəkən, proyeksiyada isə yenidən açan obyektiv. Geniş ekran formatı, oval bokeh və üfüqi işıq zolaqları (flare) ilə tanınır.",
+"tanimaq": "Ekran çox enlidir | İşıq mənbələrindən üfüqi zolaqlar uzanır | Fondakı bulanıq işıqlar dairəvi yox, ovaldır",
+"elaqeli": "Kadr nisbəti, Sahə dərinliyi",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Fokus",
+"kanal": "KİN",
+"alt": "Optika və rəng",
+"orijinal": "ing. focus · rack focus (fokus keçidi)",
+"tarif": "Təsvirin kəskin olduğu məsafə. Fokusu bir obyektdən digərinə keçirmək (rack focus) kəsik etmədən tamaşaçının diqqətini yönləndirir.",
+"tanimaq": "Ön plandakı personaj bulanıqlaşır, arxadakı aydınlaşır | Diqqət kəskin olan yerə yönəlir | Fokus keçidi süjetdə yeni bir şeyin üzə çıxdığı anla üst-üstə düşür",
+"elaqeli": "Sahə dərinliyi",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Sahə dərinliyi",
+"kanal": "KİN",
+"alt": "Optika və rəng",
+"orijinal": "ing. depth of field · tr. alan derinliği",
+"tarif": "Kadrda kəskin görünən məsafə aralığı. Dar olanda yalnız bir plan aydın görünür, qalanı bulanıqlaşır; geniş olanda ön plandan arxa plana qədər hər şey kəskindir.",
+"tanimaq": "Arxa fon tam bulanıqdır, personaj ondan ayrılıb | Ön plan və arxa plan eyni anda kəskindir, \"Citizen Kane\"dəki kimi | Kəskinlik zonası səhnənin mə'nasını dəyişir",
+"elaqeli": "Fokus, Anamorfik linza",
+"dekino": "",
+"sxem": "sahe-derinliyi"
+},
+{
+"termin": "Davamlı montaj",
+"kanal": "MON",
+"alt": "Davamlılıq",
+"orijinal": "ing. continuity editing · klassik Hollivud montajı",
+"tarif": "Kəsikləri tamaşaçının hiss etməyəcəyi şəkildə quran montaj sistemi: məkan, zaman və hərəkət planlar arasında ardıcıl qalır. Məqsəd montajı \"görünməz\" etməkdir.",
+"tanimaq": "Kəsikləri demək olar ki, hiss etmirsən | Personaj kadrdan bir tərəfdən çıxır, növbəti plana əks tərəfdən girir | Dialoq plan və əks-plan ilə qurulub",
+"elaqeli": "180 dərəcə qaydası, Eyni hərəkətdə kəsik, Jump cut",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Eyni hərəkətdə kəsik",
+"kanal": "MON",
+"alt": "Davamlılıq",
+"orijinal": "ing. match on action",
+"tarif": "Bir hərəkətin ortasında kəsib onu başqa bucaqdan davam etdirmək: personaj qapını bir planda açmağa başlayır, növbəti planda açıb bitirir. Hərəkət kəsiyi gizlədir.",
+"tanimaq": "Hərəkət iki plan arasında kəsilmədən davam edir | Kəsik ən dinamik anda olur | Bucaq dəyişir, amma axın pozulmur",
+"elaqeli": "Davamlı montaj, Kəsik",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "180 dərəcə qaydası",
+"kanal": "MON",
+"alt": "Davamlılıq",
+"orijinal": "ing. 180-degree rule",
+"tarif": "Səhnədəki iki personajı birləşdirən xəyali xətt çəkilir və kamera həmişə bu xəttin bir tərəfində qalır. Belə olanda personajlar ekranda öz tərəflərini saxlayır və tamaşaçı istiqaməti itirmir.",
+"tanimaq": "Dialoqda biri həmişə solda, digəri sağda qalır | Qayda pozulanda personajlar sanki yer dəyişir | Rejissor bə'zən çaşqınlıq yaratmaq üçün qaydanı qəsdən pozur",
+"elaqeli": "Davamlı montaj, Baxış xətti",
+"dekino": "",
+"sxem": "qayda-180"
+},
+{
+"termin": "Kəsik",
+"kanal": "MON",
+"alt": "Kəsik növləri",
+"orijinal": "ing. cut · fr. coupe · tr. kesme",
+"tarif": "Bir plandan digərinə birbaşa keçid, montajın əsas vahidi. Kəsiklərin yeri və tezliyi filmin ritmini, zamanını və mə'nasını müəyyən edir.",
+"tanimaq": "Təsvir bir anda başqa plana keçir | Kəsiklər tez-tez gəlirsə, gərginlik artır | İki plan yan-yana qoyulanda yeni mə'na yaranır",
+"elaqeli": "Jump cut, Kuleşov effekti, Ritm",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Jump cut",
+"kanal": "MON",
+"alt": "Kəsik növləri",
+"orijinal": "ing. jump cut · fr. faux raccord",
+"tarif": "Eyni obyekti demək olar ki, eyni bucaqdan çəkilmiş iki plan arasındakı kəsik: zaman \"sıçrayır\", personaj yerində titrəyir. Godard-ın \"À bout de souffle\" (1960) filmi ilə məşhurlaşıb və davamlı montajın qaydalarını qəsdən pozur.",
+"tanimaq": "Kadr eyni qalır, amma personaj birdən başqa yerdədir | Zaman parça-parça irəliləyir | Video-bloqlarda da geniş işlənir",
+"elaqeli": "Kəsik, Davamlı montaj, Yeni Dalğa",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Kuleşov effekti",
+"kanal": "MON",
+"alt": "Mə'na və ritm",
+"orijinal": "rus. эффект Кулешова · ing. Kuleshov effect",
+"tarif": "Eyni neytral sifət müxtəlif kadrlarla (şorba boşqabı, tabut, uşaq) montaj ediləndə tamaşaçı sifətdə fərqli hisslər oxuyur. Sovet rejissoru Lev Kuleşovun təcrübəsinə əsaslanır: mə'na planın özündə yox, planların arasındadır.",
+"tanimaq": "Sifət dəyişmir, amma onu necə \"oxuduğumuz\" dəyişir | Baxış planından sonra baxılan şey göstərilir | Montaj aktyor oyununu tamamlayır",
+"elaqeli": "Kəsik, İri plan, Baxış xətti",
+"dekino": "",
+"sxem": "kulesov"
+},
+{
+"termin": "Paralel montaj",
+"kanal": "MON",
+"alt": "Mə'na və ritm",
+"orijinal": "ing. cross-cutting, parallel editing",
+"tarif": "Fərqli yerlərdə eyni vaxtda baş verən iki və ya daha çox hadisə arasında növbə ilə keçid. Gərginlik yaradır və ya hadisələri bir-biri ilə müqayisə edir.",
+"tanimaq": "Səhnələr bir-birini növbə ilə əvəz edir | Kəsiklər sona yaxın sürətlənir | Xətlər sonda kəsişir və ya bir-birinə şərh olur",
+"elaqeli": "Süjet və fabula, Ritm",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Ritm",
+"kanal": "MON",
+"alt": "Mə'na və ritm",
+"orijinal": "ing. rhythm, pacing",
+"tarif": "Planların uzunluğu, kəsiklərin tezliyi və səhnələrin növbələşməsi ilə yaranan zaman hissi. Uzun planlar düşüncəyə, qısa planlar gərginliyə yol açır.",
+"tanimaq": "Planlar getdikcə qısalır və ya uzanır | Kəsiklər musiqi ilə üst-üstə düşür | Səhnə \"nəfəs alır\" və ya tamaşaçını tələsdirir",
+"elaqeli": "Kəsik, Yavaş kino",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Diegetik səs",
+"kanal": "SƏS",
+"alt": "Səsin mənbəyi",
+"orijinal": "ing. diegetic sound · yun. diegesis (nəql)",
+"tarif": "Mənbəyi filmin dünyasında olan səs: personajların danışığı, addım səsi, otaqda çalan radio. Personajlar da bu səsi eşidir.",
+"tanimaq": "Səsin mənbəyi kadrda görünür və ya kadrdan kənarda olduğu aydındır | Personajlar səsə reaksiya verir | Səs məkanın akustikasına uyğun dəyişir",
+"elaqeli": "Qeyri-diegetik səs, Kadrxarici məkan",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Qeyri-diegetik səs",
+"kanal": "SƏS",
+"alt": "Səsin mənbəyi",
+"orijinal": "ing. non-diegetic sound",
+"tarif": "Filmin dünyasından kənarda olan səs: fon musiqisi, diktorun səsi. Tamaşaçı eşidir, personajlar eşitmir.",
+"tanimaq": "Səhnədə orkestr yoxdur, amma musiqi çalır | Diktor hadisələri şərh edir | Personajlar səsə heç reaksiya vermir",
+"elaqeli": "Diegetik səs, Səs körpüsü",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Səs körpüsü",
+"kanal": "SƏS",
+"alt": "Səs montajı",
+"orijinal": "ing. sound bridge · J-cut, L-cut",
+"tarif": "Bir səhnənin səsi təsvirdən əvvəl başlayır və ya təsvir dəyişəndən sonra da davam edir. İki səhnəni bir-birinə yumşaq bağlayır.",
+"tanimaq": "Növbəti səhnənin səsi əvvəlki təsvir hələ ekrandaykən eşidilir | Dialoq kəsikdən sonra da davam edir | Keçid hiss olunmur, səhnələr sanki axır",
+"elaqeli": "Kəsik, Diegetik səs",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Film noir",
+"kanal": "JAN",
+"alt": "Janrlar",
+"orijinal": "fr. film noir (\"qara film\")",
+"tarif": "1940–50-ci illərin Amerika kriminal dramlarına fransız tənqidçilərinin verdiyi ad. Sərt kontrastlı işıq, gecə şəhəri, sinik detektiv, fatal qadın və pessimist dünyagörüşü ilə tanınır.",
+"tanimaq": "Kölgələr və jalüzdən düşən işıq zolaqları | Gecə, yağış, şəhər | Səsarxası rəvayətçi və qaranlıq sonluq",
+"elaqeli": "İşıqlandırma, Flashback",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Neorealizm",
+"kanal": "JAN",
+"alt": "Cərəyanlar",
+"orijinal": "it. neorealismo",
+"tarif": "İkinci Dünya müharibəsindən sonra İtaliyada yaranan cərəyan: real küçələrdə, çox vaxt qeyri-peşəkar aktyorlarla sadə insanların yoxsulluğunu və gündəlik həyatını göstərir. Rossellini, De Sica və Visconti əsas adlarıdır.",
+"tanimaq": "Studiya yox, real küçələr və evlər | Qəhrəmanlar fəhlə, işsiz, uşaq | Dramatik effektdən çox gündəlik həyatın axını",
+"elaqeli": "Yeni Dalğa, Yavaş kino",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Yavaş kino",
+"kanal": "JAN",
+"alt": "Cərəyanlar",
+"orijinal": "ing. slow cinema",
+"tarif": "Uzun planları, az dialoqu və hadisəsizliyi ön plana çəkən müasir arthaus meyli. Tamaşaçıdan səbir və diqqət istəyir; Béla Tarr, Tsai Ming-liang, Apichatpong Weerasethakul kimi rejissorlarla bağlanır.",
+"tanimaq": "Plan dəqiqələrlə davam edir | Hekayədə \"heç nə olmur\", amma zamanın özü hiss olunur | Musiqi demək olar ki, yoxdur",
+"elaqeli": "Ritm, Neorealizm",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Yeni Dalğa",
+"kanal": "JAN",
+"alt": "Cərəyanlar",
+"orijinal": "fr. Nouvelle Vague",
+"tarif": "1950-ci illərin sonu, 1960-cı illərdə Fransada gənc tənqidçi-rejissorların (Godard, Truffaut, Chabrol, Rohmer) başlatdığı cərəyan. Yüngül kamera, real məkanlar, jump cut və kino dilinin özü ilə oyunla tanınır.",
+"tanimaq": "Əl kamerası və küçədə çəkiliş | Kəsiklər qaydaları qəsdən pozur | Personajlar kameraya baxır, film özünü film kimi göstərir",
+"elaqeli": "Jump cut, Müəllif nəzəriyyəsi",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Apparat nəzəriyyəsi",
+"kanal": "NƏZ",
+"alt": "Tamaşaçı və baxış",
+"orijinal": "ing. apparatus theory · fr. dispositif",
+"tarif": "1970-ci illərdə Jean-Louis Baudry və başqalarının irəli sürdüyü nəzəriyyə: kinonun texniki quruluşu (qaranlıq zal, proyektor, kamera perspektivi) tamaşaçını ideoloji mövqeyə yerləşdirir və ona özünü \"hər şeyi görən\" subyekt kimi hiss etdirir.",
+"tanimaq": "Analiz filmin məzmununa yox, baxış şəraitinin özünə yönəlir | \"Kamera neytral deyil\" fikri əsasdır | Psixoanaliz və marksizmdən gələn anlayışlar işlənir",
+"elaqeli": "Sütura, Kişi baxışı",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Dekolonial kino",
+"kanal": "NƏZ",
+"alt": "Siyasi nəzəriyyə",
+"orijinal": "ing. decolonial cinema · əlaqəli: sp. Tercer Cine (Üçüncü Kino)",
+"tarif": "Müstəmləkəçiliyi və onun davam edən güc münasibətlərini tənqid edən, Avropamərkəzli kino dilinə və baxışa alternativ quran kino və nəzəriyyə. Kimin danışdığı, kimin göstərildiyi və kimin baxdığı sualını mərkəzə qoyur.",
+"tanimaq": "Kənar baxış yox, icmanın öz baxışı | Ekzotikləşdirməyə qarşı çıxış | Dil, torpaq və yaddaş mövzuları",
+"elaqeli": "Kişi baxışı, Müəllif nəzəriyyəsi",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Kişi baxışı",
+"kanal": "NƏZ",
+"alt": "Tamaşaçı və baxış",
+"orijinal": "ing. male gaze",
+"tarif": "Laura Mulvey-nin 1975-ci ildə \"Visual Pleasure and Narrative Cinema\" essesində irəli sürdüyü anlayış: klassik kinoda kamera, personaj və tamaşaçı qadını kişi baxışının obyekti kimi göstərir.",
+"tanimaq": "Kamera qadın bədənini hissə-hissə gəzir | Qadın hərəkət etmir, ona baxılır | Hekayəni kişi personaj aparır, qadın onun mükafatıdır",
+"elaqeli": "Apparat nəzəriyyəsi, Sütura",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Müəllif nəzəriyyəsi",
+"kanal": "NƏZ",
+"alt": "Müəllif və üslub",
+"orijinal": "fr. politique des auteurs · ing. auteur theory",
+"tarif": "Rejissoru filmin əsl müəllifi sayan yanaşma: onun filmlərində təkrarlanan mövzu və üslub imzası axtarılır. 1950-ci illərdə Cahiers du cinéma jurnalında formalaşıb, ABŞ-da Andrew Sarris yayıb.",
+"tanimaq": "Rejissorun filmləri arasında ortaq mövzular izlənir | Üslub imzası (kadr, rəng, ritm) dərhal tanınır | Studiya filmində belə rejissorun şəxsi baxışı axtarılır",
+"elaqeli": "Yeni Dalğa, Dekolonial kino",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Sütura",
+"kanal": "NƏZ",
+"alt": "Tamaşaçı və baxış",
+"orijinal": "fr. suture · ing. suture",
+"tarif": "Jacques-Alain Miller-in psixoanalitik termini, kinoya Jean-Pierre Oudart gətirib: plan/əks-plan montajı tamaşaçını filmin içinə \"tikir\", kadrın arxasındakı boşluğu personajın baxışı ilə doldurur.",
+"tanimaq": "Plan və əks-plan arasında tamaşaçı özünü personajın yerində hiss edir | Kameranın varlığı unudulur | Montaj \"kim baxır?\" sualını gizlədir",
+"elaqeli": "Apparat nəzəriyyəsi, Baxış xətti",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Kadr nisbəti",
+"kanal": "İST",
+"alt": "Format",
+"orijinal": "ing. aspect ratio · tr. en-boy oranı",
+"tarif": "Ekranın eninin hündürlüyünə nisbəti: 1.33:1 (klassik), 1.85:1, 2.39:1 (geniş ekran). Format kadrın içindəki məkanı və tamaşaçının hissini dəyişir.",
+"tanimaq": "Kənarlarda qara zolaqlar var | Dar format personajı sıxır, geniş format məkanı açır | Bə'zi filmlərdə nisbət film boyu dəyişir",
+"elaqeli": "Anamorfik linza, Plyonka",
+"dekino": "",
+"sxem": ""
+},
+{
+"termin": "Plyonka",
+"kanal": "İST",
+"alt": "Format",
+"orijinal": "rus. плёнка · ing. film stock · 35 mm, 16 mm",
+"tarif": "İşığa həssas kimyəvi təbəqəli lent; rəqəmsal kameradan əvvəl kino ona çəkilirdi. Dən (grain), rəng və kontrast plyonkanın növündən asılıdır; bu gün də estetik seçim kimi işlənir.",
+"tanimaq": "Təsvirdə incə dən görünür | Rənglər rəqəmsaldan fərqli, daha \"isti\"dir | Kadrın kənarlarında cızıq və ya işıq sızması",
+"elaqeli": "Kadr nisbəti",
+"dekino": "",
+"sxem": ""
+}
+]
+}
